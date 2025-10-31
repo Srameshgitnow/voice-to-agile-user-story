@@ -36,10 +36,10 @@ cd voice-to-agile-user-story
 
 python -m venv .venv
 
-# macOS/Linux:
+*# macOS/Linux:
 source .venv/bin/activate
 
-# Windows:
+*# Windows:
 .venv\Scripts\activate
 
 pip install -r requirements.txt
