@@ -29,6 +29,7 @@ Powered by:
 ## 🔐 Setup
 
 
+
 git clone https://github.com/<your-username>/voice-to-agile-user-story.git
 cd voice-to-agile-user-story
 python -m venv .venv
@@ -38,25 +39,33 @@ source .venv/bin/activate
 .venv\Scripts\activate
 
 pip install -r requirements.txt
+
+
 Microphone deps
 
 Windows
 
 pip install pipwin
 pipwin install pyaudio
+
+
 macOS
 
 brew install portaudio
 pip install pyaudio
+
+
 Linux (Debian/Ubuntu)
 
 sudo apt-get update
 sudo apt-get install -y portaudio19-dev
 pip install pyaudio
+
 Create .env from the template and add your key:
 
 cp .env.example .env
 # edit .env and set OPENAI_API_KEY
+
 
 ---
 
