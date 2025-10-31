@@ -1,0 +1,19 @@
+speechrecognition
+pyaudio
+langchain
+langchain-openai
+python-dotenv
+openai
+
+
+// Notes
+
+// pyaudio is needed for microphone access:
+
+// Windows: pip install pipwin && pipwin install pyaudio
+
+// macOS (Intel): brew install portaudio && pip install pyaudio
+
+// macOS (Apple Silicon): brew install portaudio && pip install pyaudio (may need CFLAGS/LDFLAGS)
+
+// Linux: sudo apt-get install portaudio19-dev && pip install pyaudio
