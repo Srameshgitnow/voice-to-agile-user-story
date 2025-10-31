@@ -28,7 +28,7 @@ Powered by:
 
 ## 🔐 Setup
 
-```bash
+
 git clone https://github.com/<your-username>/voice-to-agile-user-story.git
 cd voice-to-agile-user-story
 python -m venv .venv
@@ -58,6 +58,7 @@ Create .env from the template and add your key:
 cp .env.example .env
 # edit .env and set OPENAI_API_KEY
 
+---
 
 ▶️ Run
 python src/voice_user_story.py
@@ -85,6 +86,7 @@ Then a JSON like:
 
 The script prints a Python dict parsed by StructuredOutputParser.
 
+---
 
 🧠 How it works (high level)
 
@@ -95,6 +97,8 @@ Schema: ResponseSchema fields for title, description, acceptance_criteria, sever
 Prompt: ChatPromptTemplate instructs the model to output JSON with those keys
 
 Parse: StructuredOutputParser.from_response_schemas(...) → parse(response.content)
+
+---
 
 🎯 Tips
 
@@ -114,6 +118,8 @@ RequestError from Google recognizer: Check internet; the free recognizer is rate
 
 Privacy: Google’s recognizer sends audio to Google; for local STT, try vosk.
 
+---
+
 🔮 Roadmap
 
 Switch to local STT (Vosk/Whisper.cpp) for privacy.
@@ -121,6 +127,8 @@ Switch to local STT (Vosk/Whisper.cpp) for privacy.
 Add CLI arg to pass an audio file instead of mic input.
 
 Export to Jira/Azure Boards with a single command.
+
+---
 
 📄 License
 
